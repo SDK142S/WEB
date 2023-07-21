@@ -1,0 +1,21 @@
+body{
+    background-color: rgba(0, 0, 0, 0.73);
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.box{
+    
+    border:1px;
+    border-color: black;
+}
+p{
+    font-size: larger;
+}
+
+table{
+    border-width: 2px;
+    width:980px ;
+    
+}
