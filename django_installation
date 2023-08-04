@@ -1,0 +1,165 @@
+nasc@nasc-b1:~/django-playground$ python3 -m venv dvenv
+The virtual environment was not created successfully because ensurepip is not
+available.  On Debian/Ubuntu systems, you need to install the python3-venv
+package using the following command.
+
+    apt install python3.10-venv
+
+You may need to use sudo with that command.  After installing the python3-venv
+package, recreate your virtual environment.
+
+Failing command: ['/home/nasc/django-playground/dvenv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']
+
+nasc@nasc-b1:~/django-playground$ ^C
+nasc@nasc-b1:~/django-playground$ sudo apt install python3.10-venv
+[sudo] password for nasc:          
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  libpython3.10 libpython3.10-dev libpython3.10-minimal libpython3.10-stdlib python3-pip-whl
+  python3-setuptools-whl python3.10 python3.10-dev python3.10-minimal
+Suggested packages:
+  python3.10-doc binfmt-support
+The following NEW packages will be installed:
+  python3-pip-whl python3-setuptools-whl python3.10-venv
+The following packages will be upgraded:
+  libpython3.10 libpython3.10-dev libpython3.10-minimal libpython3.10-stdlib python3.10 python3.10-dev
+  python3.10-minimal
+7 upgraded, 3 newly installed, 0 to remove and 423 not upgraded.
+Need to get 15.1 MB of archives.
+After this operation, 2,999 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3.10-dev amd64 3.10.12-1~22.04.2 [507 kB]
+Get:2 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpython3.10-dev amd64 3.10.12-1~22.04.2 [4,764 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpython3.10 amd64 3.10.12-1~22.04.2 [1,949 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpython3.10-minimal amd64 3.10.12-1~22.04.2 [811 kB]
+Get:5 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpython3.10-stdlib amd64 3.10.12-1~22.04.2 [1,849 kB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3.10-minimal amd64 3.10.12-1~22.04.2 [2,258 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3.10 amd64 3.10.12-1~22.04.2 [509 kB]
+Get:8 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 python3-pip-whl all 22.0.2+dfsg-1ubuntu0.3 [1,679 kB]
+Get:9 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 python3-setuptools-whl all 59.6.0-1.2ubuntu0.22.04.1 [788 kB]
+Get:10 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 python3.10-venv amd64 3.10.12-1~22.04.2 [5,724 B]
+Fetched 15.1 MB in 10s (1,518 kB/s)                                                                     
+(Reading database ... 385675 files and directories currently installed.)
+Preparing to unpack .../python3.10-dev_3.10.12-1~22.04.2_amd64.deb ...
+Unpacking python3.10-dev (3.10.12-1~22.04.2) over (3.10.6-1~22.04.2) ...
+Preparing to unpack .../libpython3.10-dev_3.10.12-1~22.04.2_amd64.deb ...
+Unpacking libpython3.10-dev:amd64 (3.10.12-1~22.04.2) over (3.10.6-1~22.04.2) ...
+Preparing to unpack .../libpython3.10_3.10.12-1~22.04.2_amd64.deb ...
+Unpacking libpython3.10:amd64 (3.10.12-1~22.04.2) over (3.10.6-1~22.04.2) ...
+Preparing to unpack .../libpython3.10-minimal_3.10.12-1~22.04.2_amd64.deb ...
+Unpacking libpython3.10-minimal:amd64 (3.10.12-1~22.04.2) over (3.10.6-1~22.04.2) ...
+Setting up libpython3.10-minimal:amd64 (3.10.12-1~22.04.2) ...
+(Reading database ... 385680 files and directories currently installed.)
+Preparing to unpack .../libpython3.10-stdlib_3.10.12-1~22.04.2_amd64.deb ...
+Unpacking libpython3.10-stdlib:amd64 (3.10.12-1~22.04.2) over (3.10.6-1~22.04.2) ...
+Setting up libpython3.10-stdlib:amd64 (3.10.12-1~22.04.2) ...
+(Reading database ... 385681 files and directories currently installed.)
+Preparing to unpack .../python3.10-minimal_3.10.12-1~22.04.2_amd64.deb ...
+Unpacking python3.10-minimal (3.10.12-1~22.04.2) over (3.10.6-1~22.04.2) ...
+Setting up python3.10-minimal (3.10.12-1~22.04.2) ...
+(Reading database ... 385682 files and directories currently installed.)
+Preparing to unpack .../python3.10_3.10.12-1~22.04.2_amd64.deb ...
+Unpacking python3.10 (3.10.12-1~22.04.2) over (3.10.6-1~22.04.2) ...
+Setting up python3.10 (3.10.12-1~22.04.2) ...
+Selecting previously unselected package python3-pip-whl.
+(Reading database ... 385682 files and directories currently installed.)
+Preparing to unpack .../python3-pip-whl_22.0.2+dfsg-1ubuntu0.3_all.deb ...
+Unpacking python3-pip-whl (22.0.2+dfsg-1ubuntu0.3) ...
+Selecting previously unselected package python3-setuptools-whl.
+Preparing to unpack .../python3-setuptools-whl_59.6.0-1.2ubuntu0.22.04.1_all.deb ...
+Unpacking python3-setuptools-whl (59.6.0-1.2ubuntu0.22.04.1) ...
+Selecting previously unselected package python3.10-venv.
+Preparing to unpack .../python3.10-venv_3.10.12-1~22.04.2_amd64.deb ...
+Unpacking python3.10-venv (3.10.12-1~22.04.2) ...
+Setting up libpython3.10:amd64 (3.10.12-1~22.04.2) ...
+Setting up python3-setuptools-whl (59.6.0-1.2ubuntu0.22.04.1) ...
+Setting up python3-pip-whl (22.0.2+dfsg-1ubuntu0.3) ...
+Setting up libpython3.10-dev:amd64 (3.10.12-1~22.04.2) ...
+Setting up python3.10-dev (3.10.12-1~22.04.2) ...
+Setting up python3.10-venv (3.10.12-1~22.04.2) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for mailcap (3.70+nmu1ubuntu1) ...
+Processing triggers for desktop-file-utils (0.26+mint1+vanessa) ...
+Processing triggers for gnome-menus (3.36.0-1ubuntu3) ...
+nasc@nasc-b1:~/django-playground$ python3 -m venv dvenv
+nasc@nasc-b1:~/django-playground$ source.venv/bin/activate
+bash: source.venv/bin/activate: No such file or directory
+nasc@nasc-b1:~/django-playground$ source.dvenv/bin/activate
+bash: source.dvenv/bin/activate: No such file or directory
+nasc@nasc-b1:~/django-playground$ sourcedvenv/bin/activate
+bash: sourcedvenv/bin/activate: No such file or directory
+nasc@nasc-b1:~/django-playground$ source dvenv/bin/activate
+(dvenv) nasc@nasc-b1:~/django-playground$ deactivate
+nasc@nasc-b1:~/django-playground$ pip install django
+Defaulting to user installation because normal site-packages is not writeable
+Collecting django
+  Downloading Django-4.2.4-py3-none-any.whl (8.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.0/8.0 MB 4.5 MB/s eta 0:00:00
+Collecting sqlparse>=0.3.1
+  Downloading sqlparse-0.4.4-py3-none-any.whl (41 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.2/41.2 KB 6.4 MB/s eta 0:00:00
+Collecting asgiref<4,>=3.6.0
+  Downloading asgiref-3.7.2-py3-none-any.whl (24 kB)
+Collecting typing-extensions>=4
+  Downloading typing_extensions-4.7.1-py3-none-any.whl (33 kB)
+Installing collected packages: typing-extensions, sqlparse, asgiref, django
+Successfully installed asgiref-3.7.2 django-4.2.4 sqlparse-0.4.4 typing-extensions-4.7.1
+nasc@nasc-b1:~/django-playground$ python3.10 -m django --version
+4.2.4
+nasc@nasc-b1:~/django-playground$ source dvenv/bin/activate
+(dvenv) nasc@nasc-b1:~/django-playground$ pip install django
+Collecting django
+  Using cached Django-4.2.4-py3-none-any.whl (8.0 MB)
+Collecting asgiref<4,>=3.6.0
+  Using cached asgiref-3.7.2-py3-none-any.whl (24 kB)
+Collecting sqlparse>=0.3.1
+  Using cached sqlparse-0.4.4-py3-none-any.whl (41 kB)
+Collecting typing-extensions>=4
+  Using cached typing_extensions-4.7.1-py3-none-any.whl (33 kB)
+Installing collected packages: typing-extensions, sqlparse, asgiref, django
+Successfully installed asgiref-3.7.2 django-4.2.4 sqlparse-0.4.4 typing-extensions-4.7.1
+(dvenv) nasc@nasc-b1:~/django-playground$ python3.10 -m django --version
+4.2.4
+(dvenv) nasc@nasc-b1:~/django-playground$ django-admin 
+
+Type 'django-admin help <subcommand>' for help on a specific subcommand.
+
+Available subcommands:
+
+[django]
+    check
+    compilemessages
+    createcachetable
+    dbshell
+    diffsettings
+    dumpdata
+    flush
+    inspectdb
+    loaddata
+    makemessages
+    makemigrations
+    migrate
+    optimizemigration
+    runserver
+    sendtestemail
+    shell
+    showmigrations
+    sqlflush
+    sqlmigrate
+    sqlsequencereset
+    squashmigrations
+    startapp
+    startproject
+    test
+    testserver
+Note that only Django core commands are listed as settings are not properly configured (error: Requested setting INSTALLED_APPS, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.).
+(dvenv) nasc@nasc-b1:~/django-playground$ django-admin startproject django_project
+(dvenv) nasc@nasc-b1:~/django-playground$ ls
+django_project  dvenv
+(dvenv) nasc@nasc-b1:~/django-playground$ cd django_project/
+(dvenv) nasc@nasc-b1:~/django-playground/django_project$ ls
+django_project  manage.py
+(dvenv) nasc@nasc-b1:~/django-playground/django_project$ 
